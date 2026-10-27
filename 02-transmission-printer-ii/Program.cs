@@ -4,8 +4,10 @@ class Program
     {
         PrintTransmission("System ready");
         PrintTransmission("Dock", "Gate unlocked");
-
+        
         // TODO: Kall også din tredje overload.
+        
+        PrintTransmission("High Command","We ran out of beans", true);
     }
 
     static void PrintTransmission(string message)
@@ -18,5 +20,14 @@ class Program
         Console.WriteLine($"[{sender}] {message}");
     }
 
-    // TODO: Lag tredje overload.
+    static void PrintTransmission(string sender, string message, bool isPriority)
+    {   if (isPriority == true)
+        {
+            Console.WriteLine($"[URGENT MESSAGE]: {sender}: {message}");
+        }
+        else
+        { 
+            Console.WriteLine($"[{sender}] {message}"); 
+        }
+    }
 }

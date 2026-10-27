@@ -6,8 +6,8 @@ class Program
         PrintTransmission("Dock", "Gate unlocked");
         
         // TODO: Kall også din tredje overload.
-        
-        PrintTransmission("High Command","We ran out of beans", true);
+        PrintTransmission("Kitchen", "we ran out of baked beans",false);
+        PrintTransmission("High Command","WE ARE VERY MUCH OUT OF BAKED BEANS", true);
     }
 
     static void PrintTransmission(string message)

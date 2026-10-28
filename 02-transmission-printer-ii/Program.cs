@@ -4,8 +4,6 @@ class Program
     {
         PrintTransmission("System ready");
         PrintTransmission("Dock", "Gate unlocked");
-        
-        // TODO: Kall også din tredje overload.
         PrintTransmission("Kitchen", "we ran out of baked beans",false);
         PrintTransmission("High Command","WE ARE VERY MUCH OUT OF BAKED BEANS", true);
     }

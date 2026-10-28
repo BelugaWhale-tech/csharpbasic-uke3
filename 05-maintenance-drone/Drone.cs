@@ -11,13 +11,19 @@ public class Drone
 
     public string Describe()
     {
-        // TODO
-        return "";
+        return $"{Name} black drone, used for delivery";
     }
 
     public bool NeedsService()
     {
-        // TODO
-        return false;
+        if(FlightHours >= 100)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false; 
+        }
     }
 }

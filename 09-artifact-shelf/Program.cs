@@ -1,4 +1,3 @@
-using System.Security.Cryptography;
 
 List<Artifact> artifacts = new List<Artifact>();
 Artifact trident = new Artifact("Neptunes Trident","The red sea",45);

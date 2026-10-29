@@ -1,5 +1,24 @@
-List<Artifact> artifacts = new List<Artifact>();
+using System.Security.Cryptography;
 
-// TODO: Opprett minst fire Artifact-objekter og legg dem i listen.
-// TODO: Skriv Count og alle objektene.
-// TODO: Legg til ett ekstra objekt og skriv Count igjen.
+List<Artifact> artifacts = new List<Artifact>();
+Artifact trident = new Artifact("Neptunes Trident","The red sea",45);
+Artifact skull = new Artifact("Skull of Mephisto","Papanyginea",100);
+Artifact sword = new Artifact("Sword of a thousand truths", "South park",200);
+Artifact beans = new Artifact("Magical beans","Yorkshire",75);
+Artifact mouse = new Artifact("Packard bell wired mouse", "USSR",80);
+
+artifacts.Add(trident);
+artifacts.Add(skull);
+artifacts.Add(sword);
+artifacts.Add(beans);
+
+Console.WriteLine(artifacts.Count);
+foreach (Artifact i in artifacts)
+{  
+    Console.WriteLine($"{i.Name} {i.Origin} {i.Risk}");
+}
+
+artifacts.Add(mouse);
+Console.WriteLine(artifacts.Count);
+//skrive ut det nye objektet også?
+
